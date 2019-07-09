@@ -1,1 +1,2 @@
 # friendFinder
+In this application, the user will fill out the survey with his/her answers to the questions. Once the survey is complete, the system will match the user with another person who scored similar on each answer. 
