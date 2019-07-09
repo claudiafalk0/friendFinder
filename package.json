@@ -1,0 +1,25 @@
+{
+  "name": "friendFinder",
+  "version": "1.0.0",
+  "description": "In this application, the user will fill out the survey with his/her answers to the questions. Once the survey is complete, the system will match the user with another person who scored similar on each answer.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudiafalk0/friendFinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claudiafalk0/friendFinder/issues"
+  },
+  "homepage": "https://github.com/claudiafalk0/friendFinder#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
