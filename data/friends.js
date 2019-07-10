@@ -2,7 +2,7 @@ var friends = [
 
     {
         name: 'Monica Geller',
-        // photo: monica_geller.jpg,
+        url: 'monica_geller.jpg',
         scores: [
             5,
             1,
