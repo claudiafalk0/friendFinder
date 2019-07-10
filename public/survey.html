@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://kit.fontawesome.com/a5527f9b6f.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href="./home.css">
+    <link rel='stylesheet' href="style.css">
     <title>Survey</title>
 </head>
 <body>
@@ -35,31 +36,31 @@
                     Rom-Coms?</p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group1" type="radio" checked/>
+                        <input class='with-gap; group1' name="group1" type="radio" checked/>
                         <span>1</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group1" type="radio"/>
+                        <input class='with-gap; group1' name="group1" type="radio"/>
                         <span>2</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class="with-gap" name="group1" type="radio"/>
+                        <input class="with-gap; group1" name="group1" type="radio"/>
                         <span>3</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group1" type="radio"/>
+                        <input class='with-gap; group1' name="group1" type="radio"/>
                         <span>4</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group1" type="radio"/>
+                        <input class='with-gap; group1' name="group1" type="radio"/>
                         <span>5</span>
                     </label>
                 </p>
@@ -69,31 +70,31 @@
                     totally disagree, 5 being 100% agree)</p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group2" type="radio" checked/>
+                        <input class='with-gap; group2' name="group2" type="radio" checked/>
                         <span>1</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group2" type="radio"/>
+                        <input class='with-gap; group2' name="group2" type="radio"/>
                         <span>2</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class="with-gap" name="group2" type="radio"/>
+                        <input class="with-gap; group2" id="group2" type="radio"/>
                         <span>3</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group2" type="radio"/>
+                        <input class='with-gap; group2' id="group2" type="radio"/>
                         <span>4</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group2" type="radio"/>
+                        <input class='with-gap; group2' id="group2" type="radio"/>
                         <span>5</span>
                     </label>
                 </p>
@@ -103,31 +104,31 @@
                     100% agree)</p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group3" type="radio" checked/>
+                        <input class='with-gap; group3' id="group3" type="radio" checked/>
                         <span>1</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group3" type="radio"/>
+                        <input class='with-gap' id="group3" type="radio"/>
                         <span>2</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class="with-gap" name="group3" type="radio"/>
+                        <input class="with-gap" id="group3" type="radio"/>
                         <span>3</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group3" type="radio"/>
+                        <input class='with-gap' id="group3" type="radio"/>
                         <span>4</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group3" type="radio"/>
+                        <input class='with-gap' id="group3" type="radio"/>
                         <span>5</span>
                     </label>
                 </p>
@@ -137,31 +138,31 @@
                     totally disagree, 5 being 100% agree)</p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group4" type="radio" checked/>
+                        <input class='with-gap' id="group4" type="radio" checked/>
                         <span>1</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group4" type="radio"/>
+                        <input class='with-gap' id="group4" type="radio"/>
                         <span>2</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class="with-gap" name="group4" type="radio"/>
+                        <input class="with-gap" id="group4" type="radio"/>
                         <span>3</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group4" type="radio"/>
+                        <input class='with-gap' id="group4" type="radio"/>
                         <span>4</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group4" type="radio"/>
+                        <input class='with-gap' id="group4" type="radio"/>
                         <span>5</span>
                     </label>
                 </p>
@@ -171,31 +172,31 @@
                     disagree, 5 being 100% agree)</p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group5" type="radio" checked/>
+                        <input class='with-gap' id="group5" type="radio" checked/>
                         <span>1</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group5" type="radio"/>
+                        <input class='with-gap' id="group5" type="radio"/>
                         <span>2</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class="with-gap" name="group5" type="radio"/>
+                        <input class="with-gap" id="group5" type="radio"/>
                         <span>3</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group5" type="radio"/>
+                        <input class='with-gap' id="group5" type="radio"/>
                         <span>4</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group5" type="radio"/>
+                        <input class='with-gap' id="group5" type="radio"/>
                         <span>5</span>
                     </label>
                 </p>
@@ -205,31 +206,31 @@
                     totally disagree, 5 being 100% agree)</p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group6" type="radio" checked/>
+                        <input class='with-gap' id="group6" type="radio" checked/>
                         <span>1</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group6" type="radio"/>
+                        <input class='with-gap' id="group6" type="radio"/>
                         <span>2</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class="with-gap" name="group6" type="radio"/>
+                        <input class="with-gap" id="group6" type="radio"/>
                         <span>3</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group6" type="radio"/>
+                        <input class='with-gap' id="group6" type="radio"/>
                         <span>4</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group6" type="radio"/>
+                        <input class='with-gap' id="group6" type="radio"/>
                         <span>5</span>
                     </label>
                 </p>
@@ -239,31 +240,31 @@
                     opened(1 being totally disagree, 5 being 100% agree)</p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group7" type="radio" checked/>
+                        <input class='with-gap' id="group7" type="radio" checked/>
                         <span>1</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group7" type="radio"/>
+                        <input class='with-gap' id="group7" type="radio"/>
                         <span>2</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class="with-gap" name="group7" type="radio"/>
+                        <input class="with-gap" id="group7" type="radio"/>
                         <span>3</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group7" type="radio"/>
+                        <input class='with-gap' id="group7" type="radio"/>
                         <span>4</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group7" type="radio"/>
+                        <input class='with-gap' id="group7" type="radio"/>
                         <span>5</span>
                     </label>
                 </p>
@@ -273,31 +274,31 @@
                     being totally disagree, 5 being 100% agree)</p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group8" type="radio" checked/>
+                        <input class='with-gap' id="group8" type="radio" checked/>
                         <span>1</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group8" type="radio"/>
+                        <input class='with-gap' id="group8" type="radio"/>
                         <span>2</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class="with-gap" name="group8" type="radio"/>
+                        <input class="with-gap" id="group8" type="radio"/>
                         <span>3</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group8" type="radio"/>
+                        <input class='with-gap' id="group8" type="radio"/>
                         <span>4</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group8" type="radio"/>
+                        <input class='with-gap' id="group8" type="radio"/>
                         <span>5</span>
                     </label>
                 </p>
@@ -308,31 +309,31 @@
                     being 100% agree)</p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group9" type="radio" checked/>
+                        <input class='with-gap' id="group9" type="radio" checked/>
                         <span>1</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group9" type="radio"/>
+                        <input class='with-gap' id="group9" type="radio"/>
                         <span>2</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class="with-gap" name="group9" type="radio"/>
+                        <input class="with-gap" id="group9" type="radio"/>
                         <span>3</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group9" type="radio"/>
+                        <input class='with-gap' id="group9" type="radio"/>
                         <span>4</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group9" type="radio"/>
+                        <input class='with-gap' id="group9" type="radio"/>
                         <span>5</span>
                     </label>
                 </p>
@@ -342,32 +343,32 @@
                     spiritual level</p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group10" type="radio"
+                        <input class='with-gap' id="group10" type="radio"
                                checked/>
                         <span>1</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group10" type="radio"/>
+                        <input class='with-gap' id="group10" type="radio"/>
                         <span>2</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class="with-gap" name="group10" type="radio"/>
+                        <input class="with-gap" id="group10" type="radio"/>
                         <span>3</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group10" type="radio"/>
+                        <input class='with-gap' id="group10" type="radio"/>
                         <span>4</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap' name="group10" type="radio"/>
+                        <input class='with-gap' id="group10" type="radio"/>
                         <span>5</span>
                     </label>
                 </p>
@@ -383,20 +384,35 @@
 </html>
 
 <script type='text/javascript'>
-    $('#submit').on('click', function (event) {
-        event.preventDefault();
+$('#submit').on('click', function(event){
+    event.preventDefault();
 
-        var newFriend = {
-            name: $('#name').val().trim(),
-            scores: $('.with-gap').val().trim()
-        };
+    var newFriend = {
+        firstName: $('#first_name').val().trim(),
+        lastName: $('#last_name').val().trim(),
+        score:[
+                $('#group1').on('click', function(event){
+                    var radioValue = $('input[type = "radio":checked').val();
+                    if(radioValue){    
+                        return radioValue;
+                    };
+                }),
+            $('#question2').val(),
+            $('#question3').val(),
+            $('#question4').val(),
+            $('#question5').val(),
+            $('#question6').val(),
+            $('#question7').val(),
+            $('#question8').val(),
+            $('#question9').val(),
+            $('#question10').val()
+        ]
+    }
+    console.log(newFriend);
+})
 
-        console.log(newFriend);
-
-        $.post('/api/friends', newFriend)
-            .then(function (data) {
-                console.log('index.html', data);
-                alert('Searching for friend....');
-            })
-    });
+  // Or with jQuery
+//   $(document).ready(function(){
+//     $('.modal').modal();
+//   });
 </script>
