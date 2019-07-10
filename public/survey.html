@@ -382,21 +382,21 @@
 </body>
 </html>
 
-<!--<script type='text/javascript'>-->
-<!--    $('#submit').on('click', function (event) {-->
-<!--        event.preventDefault();-->
+<script type='text/javascript'>
+    $('#submit').on('click', function (event) {
+        event.preventDefault();
 
-<!--        var newFriend = {-->
-<!--            name: $('#name').val().trim(),-->
-<!--            scores: $('.with-gap').val().trim()-->
-<!--        };-->
+        var newFriend = {
+            name: $('#name').val().trim(),
+            scores: $('.with-gap').val().trim()
+        };
 
-<!--        console.log(newFriend);-->
+        console.log(newFriend);
 
-<!--        $.post('/api/friends', newFriend)-->
-<!--            .then(function (data) {-->
-<!--                console.log('index.html', data);-->
-<!--                alert('Searching for friend....');-->
-<!--            })-->
-<!--    });-->
-<!--</script>-->
+        $.post('/api/friends', newFriend)
+            .then(function (data) {
+                console.log('index.html', data);
+                alert('Searching for friend....');
+            })
+    });
+</script>
