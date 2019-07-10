@@ -2,11 +2,10 @@
     text-align:center;
 }
 #header{
-font-family: 'Shadows Into Light', cursive;
-text-align: center;
-font-size: 60px;
+font-family: 'Shadows Into Light', cursive !important;
+text-align: center !important;
+font-size: 60px !important;
+padding: 10px !important;
 };
-.with-gap{
-    background-color:#c0a0dd;
-    background:plum;
-}
+
+
