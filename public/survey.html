@@ -375,21 +375,23 @@
                         <span>5</span>
                     </label>
                 </p>
-                <button id='submit' class="btn waves-effect waves-light"
-                        type="submit" name="action" style='background-color:plum'>
-                    <b>Submit</b>
-                </button>
-            </form>
-        </div>
-    </form>
+                <button id='submit' data-target="modal1" class="btn waves-effect waves-light modal-trigger"
+                type="submit" name="action"  style='background-color:plum'>
+                <b>Submit</b>
+            </button>
+        </form>
+    </div>
+</form>
 </div>
 </body>
 </html>
 
+
+
 <script type='text/javascript'>
 $('#submit').on('click', function(event){
     event.preventDefault();
-
+    
     var newFriend = {
         firstName: $('#first_name').val().trim(),
         lastName: $('#last_name').val().trim(),
@@ -406,11 +408,32 @@ $('#submit').on('click', function(event){
             $('[name=group10]:checked').val()
         ]
     }
-                console.log(newFriend.score);
-})
+    console.log(newFriend);
+    
+    $.post('/api/friends', newFriend, function(data){
+        if(data){
+            alert('Yay!')
+            
+        }
+        $('#first_name').val('');
+        $('#last_name').val('');
+    })
+});
+// $(document).ready(function(){
+// $('.modal').modal();
+// <div id="modal1" class="modal">
+//     <div class="modal-content">
+//         <h4>Meet your new Best Friend</h4>
+//         <div class="card-body">
+//             <ul id="friendsList" class="list-group"></ul>
+//             </div>
+//             </div>
+//             <div class="modal-footer">
+//                 <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+//                 </div>
+//                 </div>
+// });
 
-  // Or with jQuery
-//   $(document).ready(function(){
-//     $('.modal').modal();
-//   });
+
+// Or with jQuery
 </script>
