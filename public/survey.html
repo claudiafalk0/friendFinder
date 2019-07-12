@@ -469,7 +469,7 @@
                     listItem.append(
                         $("<h2>").text("Name: " + friendsData.friendsData.name),
                             $("<hr>"),
-                        $("<h2>").attr(`<img src = ${friendsData.friendsData.url} alt = "Profile Pic" height = '42' width = '42'>`),
+                        $("<img>").attr(`src`, `${friendsData.friendsData.url}`, `alt`,"Profile Pic", `height`,'42', `width`,'42'),
           );
           
           bestFriendList.append(listItem);
