@@ -8,11 +8,12 @@ module.exports = function(app){
     app.post('/api/friends', function(req,res){
         var total = 0;
         var winningTotal = 0;
+        var winningObj = 0;
         var totalArr = [];
         tableData.push(req.body);
         res.json(true);
-        for(i=0; i < req.body.score.length; i++){
-            var num = parseInt(req.body.score[i]);
+        for(i=0; i < req.body.scores.length; i++){
+            var num = parseInt(req.body.scores[i]);
             total += num;
         }
         console.log(total);
@@ -24,17 +25,22 @@ module.exports = function(app){
                     totalArr[i] += val;
                 });
             }
-            console.log(totalArr[i]);
         }
-        totalArr.forEach(function(val){
+        for(i = 0; i < totalArr.length; i++) {
+        // totalArr.forEach(function(val){
             var x, y = 0;
-            val > total ? x = val : y = val;
-            val < total ? x = total : y = total; 
+            totalArr[i] > total ? x = totalArr[i] : y = totalArr[i];
+            totalArr[i] < total ? x = total : y = total; 
             if (winningTotal === 0 || (x - y) < winningTotal) {
-                winningTotal = val;
+                winningTotal = totalArr[i];
+                winningObj = i;
             }
-        });
+        };
+        console.log(tableData[i]);
+        // console.log('This is the winning Arr ' + totalArr[i]);
         console.log(totalArr[0] + "|" + totalArr[1] + "|" + winningTotal);
+        console.log(tableData[winningObj]);
+        module.exports(tableData[winningObj]);
         // console.log('arrays total: ' + arrTotal);
     });
 

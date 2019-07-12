@@ -15,390 +15,401 @@
 </head>
 
 <body>
-    <div id='heading' class="card-panel">
-        <span id='header' class="#ba68c8 purple lighten-2">FriendFinder</span>
-    </div>
-    <div class="row">
-        <p> Please enter your first and last name.</p>
-        <form id='name' class="col s12">
-            <div class="row">
-                <div class="input-field col s6">
-                    <input placeholder="John" id="first_name" type="text" class="validate">
-                    <label for="first_name">First Name</label>
-                </div>
-                <div class="input-field col s6">
-                    <input placeholder='Smith' id="last_name" type="text" class="validate">
-                    <label for="last_name">Last Name</label>
-                </div>
+<div id='heading' class="card-panel">
+    <span id='header' class="#ba68c8 purple lighten-2">FriendFinder</span>
+</div>
+<div class="row">
+    <p> Please enter your first and last name.</p>
+    <form id='name' class="col s12">
+        <div class="row">
+            <div class="input-field col s6">
+                <input placeholder="John" id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
             </div>
-            <div class="row">
+            <div class="input-field col s6">
+                <input placeholder='Smith' id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+            </div>
+        </div>
+        <div class="row">
 
-                <form id='questionOne' action="#">
-                    <p>1. On a scale of 1-5 (1 being not at all likely, 5 being extremely likely), how much do you like
-                        Rom-Coms?</p>
+            <form id='questionOne' action="#">
+                <p>1. On a scale of 1-5 (1 being not at all likely, 5 being extremely likely), how much do you like
+                    Rom-Coms?</p>
 
-                    <div id='question1'>
+                <div id='question1'>
 
+                    <label>
+                        <input class='with-gap; group1' name="group1" type="radio" value='1' checked/>
+                        <span>1</span>
+                    </label>
+                    <p>
                         <label>
-                            <input class='with-gap; group1' name="group1" type="radio" value='1' checked />
-                            <span>1</span>
+                            <input class='with-gap; group1' name="group1" value='2' type="radio"/>
+                            <span>2</span>
                         </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input class='with-gap; group1' name="group1" value='2' type="radio" />
-                                <span>2</span>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input class="with-gap; group1" id="group1" value='3' type="radio" />
-                                <span>3</span>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input class='with-gap; group1' id="group1" value='4' type="radio" />
-                                <span>4</span>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input class='with-gap; group1' id="group1" value='5' type="radio" />
-                                <span>5</span>
-                            </label>
-                        </p>
-                    </div>
-                </form>
-                <p>
-                    <form id='question2' action="#">
-                        <p>2. Cooking is a way for me to relax after a stressful day. Choose an answer between 1-5 (1
-                            being
-                            totally disagree, 5 being 100% agree)</p>
-                        <label for='1'>
-                            <input class='with-gap; group2' name="group2" value='1' type="radio" checked />
-                            <span>1</span>
+                    </p>
+                    <p>
+                        <label>
+                            <input class="with-gap; group1" name="group1" value='3' type="radio"/>
+                            <span>3</span>
                         </label>
-                </p>
+                    </p>
+                    <p>
+                        <label>
+                            <input class='with-gap; group1' name="group1" value='4' type="radio"/>
+                            <span>4</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input class='with-gap; group1' name="group1" value='5' type="radio"/>
+                            <span>5</span>
+                        </label>
+                    </p>
+                </div>
+            </form>
+
+            <form id='question2' action="#">
+                <p>2. Cooking is a way for me to relax after a stressful day. Choose an answer between 1-5 (1
+                    being
+                    totally disagree, 5 being 100% agree)</p>
+                <label>
+                    <input class='with-gap; group2' name="group2" value='1' type="radio" checked/>
+                    <span>1</span>
+                </label>
+
                 <p>
                     <label>
-                        <input class='with-gap; group2' name="group2" value='2' type="radio" />
+                        <input class='with-gap; group2' name="group2" value='2' type="radio"/>
                         <span>2</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class="with-gap; group2" name="group2" value='3' type="radio" />
+                        <input class="with-gap; group2" name="group2" value='3' type="radio"/>
                         <span>3</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap; group2' name="group2" value='4' type="radio" />
+                        <input class='with-gap; group2' name="group2" value='4' type="radio"/>
                         <span>4</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class='with-gap; group2' name="group2" value='5' type="radio" />
+                        <input class='with-gap; group2' name="group2" value='5' type="radio"/>
                         <span>5</span>
                     </label>
                 </p>
-        </form>
-        <form id='question3' action="#">
-            <p>3. I would rather be reading a book then going to a party (1 being totally disagree, 5 being
-                100% agree)</p>
-            <p>
-                <label>
-                    <input class='with-gap; group3' name="group3" value='1' type="radio" checked />
-                    <span>1</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap; group3' name="group3" value='2' type="radio" />
-                    <span>2</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class="with-gap; group3" name="group3" value='3' type="radio" />
-                    <span>3</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap; group3' name="group3" value='4' type="radio" />
-                    <span>4</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap; group3' name="group3" value='5' type="radio" />
-                    <span>5</span>
-                </label>
-            </p>
-        </form>
-        <form id='question4' action="#">
-            <p>4. On a Saturday night, you'd most likely find me at home watching reality TV(1 being
-                totally disagree, 5 being 100% agree)</p>
-            <p>
-                <label>
-                    <input class='with-gap; group4' name="group4" value='1' type="radio" checked />
-                    <span>1</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap; group4' name="group4" value='2' type="radio" />
-                    <span>2</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class="with-gap; group4" name="group4" value='3' type="radio" />
-                    <span>3</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap; group4' name="group4" value='4' type="radio" />
-                    <span>4</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap; group4' name="group4" value='5' type="radio" />
-                    <span>5</span>
-                </label>
-            </p>
-        </form>
-        <form id='question5' action="#">
-            <p>5. I'm not the type that likes being the center of attention(1 being totally
-                disagree, 5 being 100% agree)</p>
-            <p>
-                <label>
-                    <input class='with-gap; group5' name="group5" value='1' type="radio" checked />
-                    <span>1</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap; group5' name="group5" value='2' type="radio" />
-                    <span>2</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class="with-gap; group5" name="group5" value='3' type="radio" />
-                    <span>3</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap; group5' name="group5" value='4' type="radio" />
-                    <span>4</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap; group5' name="group5" value='5' type="radio" />
-                    <span>5</span>
-                </label>
-            </p>
-        </form>
-        <form id='question6' action="#">
-            <p>6. I am quiet and reserved, but I like to be included in the conversation(1 being
-                totally disagree, 5 being 100% agree)</p>
-            <p>
-                <label>
-                    <input class='with-gap; group6' name="group6" value='1' type="radio" checked />
-                    <span>1</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap; group6' name="group6" value='2' type="radio" />
-                    <span>2</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class="with-gap; group6" name="group6" value='3' type="radio" />
-                    <span>3</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap; group6' name="group6" value='4' type="radio" />
-                    <span>4</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap; group6' name="group6" value='5' type="radio" />
-                    <span>5</span>
-                </label>
-            </p>
-        </form>
-        <form id='question7' action="#">
-            <p>7. I love to explore new places, even if that's just a new restaurant that
-                opened(1 being totally disagree, 5 being 100% agree)</p>
-            <p>
-                <label>
-                    <input class='with-gap;group7' name="group7" value='1' type="radio" checked />
-                    <span>1</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap;group7' name="group7" value='2' type="radio" />
-                    <span>2</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class="with-gap;group7" name="group7" value='3' type="radio" />
-                    <span>3</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap;group7' name="group7" value='4' type="radio" />
-                    <span>4</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap;group7' name="group7" value='5' type="radio" />
-                    <span>5</span>
-                </label>
-            </p>
-        </form>
-        <form id='question8' action="#">
-            <p>8. I will always tell the truth, but say it in the nicest way possible(1
-                being totally disagree, 5 being 100% agree)</p>
-            <p>
-                <label>
-                    <input class='with-gap;group8' name="group8" value='1' type="radio" checked />
-                    <span>1</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap;group8' name="group8" value='2' type="radio" />
-                    <span>2</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class="with-gap;group8" name="group8" value='3' type="radio" />
-                    <span>3</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap;group8' name="group8" value='4' type="radio" />
-                    <span>4</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap;group8' name="group8" value='5' type="radio" />
-                    <span>5</span>
-                </label>
-            </p>
-        </form>
-        <form id='question9' action="#">
-            <p>9. I have a vivid imagination, and am extremely creative. Even though
-                my art skills are akin to a 4-year-olds(1 being totally disagree, 5
-                being 100% agree)</p>
-            <p>
-                <label>
-                    <input class='with-gap;group9' name="group9" value='1' type="radio" checked />
-                    <span value='1'>1</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap;group9' name="group9" value='2' type="radio" />
-                    <span value='2'>2</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class="with-gap;group9" name="group9" value='3' type="radio" />
-                    <span>3</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap;group9' name="group9" value='4' type="radio" />
-                    <span>4</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap;group9' name="group9" value='5' type="radio" />
-                    <span>5</span>
-                </label>
-            </p>
-        </form>
-        <form id='question10' action="#">
-            <p>10. Pick a number between 1 and 5 that speaks to you on a
-                spiritual level</p>
-            <p>
-                <label>
-                    <input class='with-gap;group10' name="group10" value='1' type="radio" checked />
-                    <span>1</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap;group10' name="group10" value='2' type="radio" />
-                    <span>2</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class="with-gap;group10" name="group10" value='3' type="radio" />
-                    <span>3</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap;group10' name="group10" value='4' type="radio" />
-                    <span>4</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class='with-gap;group10' name="group10" value='5' type="radio" />
-                    <span>5</span>
-                </label>
-            </p>
-            <div class="modal-container">
-                <button id='submit' data-target="modal1" class="btn waves-effect waves-light modal-trigger"
-                    type="submit" name="action" style='background-color:plum'>
-                    <b>Submit</b>
-                </button>
+            </form>
 
-                <div id="modal1" class="modal">
-                    <div class="modal-content">
-                        <h4>Meet your new Best Friend</h4>
-                        <div class="card-body">
-                            <ul id="friendsList" class="list-group"></ul>
+            <form id='question3' action="#">
+                <p>3. I would rather be reading a book then going to a party (1 being totally disagree, 5 being
+                    100% agree)</p>
+                <p>
+                    <label>
+                        <input class='with-gap; group3' name="group3" value='1' type="radio" checked/>
+                        <span>1</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap; group3' name="group3" value='2' type="radio"/>
+                        <span>2</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap; group3" name="group3" value='3' type="radio"/>
+                        <span>3</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap; group3' name="group3" value='4' type="radio"/>
+                        <span>4</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap; group3' name="group3" value='5' type="radio"/>
+                        <span>5</span>
+                    </label>
+                </p>
+            </form>
+
+            <form id='question4' action="#">
+                <p>4. On a Saturday night, you'd most likely find me at home watching reality TV(1 being
+                    totally disagree, 5 being 100% agree)</p>
+                <p>
+                    <label>
+                        <input class='with-gap; group4' name="group4" value='1' type="radio" checked/>
+                        <span>1</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap; group4' name="group4" value='2' type="radio"/>
+                        <span>2</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap; group4" name="group4" value='3' type="radio"/>
+                        <span>3</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap; group4' name="group4" value='4' type="radio"/>
+                        <span>4</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap; group4' name="group4" value='5' type="radio"/>
+                        <span>5</span>
+                    </label>
+                </p>
+            </form>
+
+            <form id='question5' action="#">
+                <p>5. I'm not the type that likes being the center of attention(1 being totally
+                    disagree, 5 being 100% agree)</p>
+                <p>
+                    <label>
+                        <input class='with-gap; group5' name="group5" value='1' type="radio" checked/>
+                        <span>1</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap; group5' name="group5" value='2' type="radio"/>
+                        <span>2</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap; group5" name="group5" value='3' type="radio"/>
+                        <span>3</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap; group5' name="group5" value='4' type="radio"/>
+                        <span>4</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap; group5' name="group5" value='5' type="radio"/>
+                        <span>5</span>
+                    </label>
+                </p>
+            </form>
+
+            <form id='question6' action="#">
+                <p>6. I am quiet and reserved, but I like to be included in the conversation(1 being
+                    totally disagree, 5 being 100% agree)</p>
+                <p>
+                    <label>
+                        <input class='with-gap; group6' name="group6" value='1' type="radio" checked/>
+                        <span>1</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap; group6' name="group6" value='2' type="radio"/>
+                        <span>2</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap; group6" name="group6" value='3' type="radio"/>
+                        <span>3</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap; group6' name="group6" value='4' type="radio"/>
+                        <span>4</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap; group6' name="group6" value='5' type="radio"/>
+                        <span>5</span>
+                    </label>
+                </p>
+            </form>
+
+            <form id='question7' action="#">
+                <p>7. I love to explore new places, even if that's just a new restaurant that
+                    opened(1 being totally disagree, 5 being 100% agree)</p>
+                <p>
+                    <label>
+                        <input class='with-gap;group7' name="group7" value='1' type="radio" checked/>
+                        <span>1</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap;group7' name="group7" value='2' type="radio"/>
+                        <span>2</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap;group7" name="group7" value='3' type="radio"/>
+                        <span>3</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap;group7' name="group7" value='4' type="radio"/>
+                        <span>4</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap;group7' name="group7" value='5' type="radio"/>
+                        <span>5</span>
+                    </label>
+                </p>
+            </form>
+
+            <form id='question8' action="#">
+                <p>8. I will always tell the truth, but say it in the nicest way possible(1
+                    being totally disagree, 5 being 100% agree)</p>
+                <p>
+                    <label>
+                        <input class='with-gap;group8' name="group8" value='1' type="radio" checked/>
+                        <span>1</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap;group8' name="group8" value='2' type="radio"/>
+                        <span>2</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap;group8" name="group8" value='3' type="radio"/>
+                        <span>3</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap;group8' name="group8" value='4' type="radio"/>
+                        <span>4</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap;group8' name="group8" value='5' type="radio"/>
+                        <span>5</span>
+                    </label>
+                </p>
+            </form>
+
+            <form id='question9' action="#">
+                <p>9. I have a vivid imagination, and am extremely creative. Even though
+                    my art skills are akin to a 4-year-olds(1 being totally disagree, 5
+                    being 100% agree)</p>
+                <p>
+                    <label>
+                        <input class='with-gap;group9' name="group9" value='1' type="radio" checked/>
+                        <span>1</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap;group9' name="group9" value='2' type="radio"/>
+                        <span>2</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap;group9" name="group9" value='3' type="radio"/>
+                        <span>3</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap;group9' name="group9" value='4' type="radio"/>
+                        <span>4</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap;group9' name="group9" value='5' type="radio"/>
+                        <span>5</span>
+                    </label>
+                </p>
+            </form>
+
+            <form id='question10' action="#">
+                <p>10. Pick a number between 1 and 5 that speaks to you on a
+                    spiritual level</p>
+                <p>
+                    <label>
+                        <input class='with-gap;group10' name="group10" value='1' type="radio" checked/>
+                        <span>1</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap;group10' name="group10" value='2' type="radio"/>
+                        <span>2</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap;group10" name="group10" value='3' type="radio"/>
+                        <span>3</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap;group10' name="group10" value='4' type="radio"/>
+                        <span>4</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class='with-gap;group10' name="group10" value='5' type="radio"/>
+                        <span>5</span>
+                    </label>
+                </p>
+                <div class="modal-container">
+                    <button id='submit' data-target="modal1" class="btn waves-effect waves-light modal-trigger"
+                            type="submit" name="action" style='background-color:plum'>
+                        <b>Submit</b>
+                    </button>
+
+                    <div id="modal1" class="modal">
+                        <div class="modal-content">
+                            <h4>Meet your new Best Friend</h4>
+                            <div class="card-body">
+                                <ul id="friendsList" class="list-group">
+                                    <li><p>Name: </p>
+                                        <p id='newFriend'></p></li>
+                                    <li id='img'></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
-                    </div>
                 </div>
-            </div>
-        </form>
-    </div>
+            </form>
+        </div>
     </form>
-    </div>
+</div>
 
 </body>
 
@@ -411,7 +422,7 @@
         var newFriend = {
             firstName: $('#first_name').val().trim(),
             lastName: $('#last_name').val().trim(),
-            score: [
+            scores: [
                 $('[name=group1]:checked').val(),
                 $('[name=group2]:checked').val(),
                 $('[name=group3]:checked').val(),
@@ -423,20 +434,24 @@
                 $('[name=group9]:checked').val(),
                 $('[name=group10]:checked').val()
             ]
-        }
-        console.log(newFriend);
+        };
 
         $.post('/api/friends', newFriend, function (data) {
+            console.log(data);
             if (data) {
-                // alert('Yay!')
+                // need friend name and photo
+                $('#newFriend').text(data.name);
+                $('#img').attr(`<img src= ${data.url} alt = "profile picture">`)
 
             }
             $('#first_name').val('');
             $('#last_name').val('');
-        })
+        });
+
+
+        $(document).ready(function () {
+            $('.modal').modal();
+        });
     });
-    $(document).ready(function () {
-        $('.modal').modal();
-    });
-// Or with jQuery
+    // Or with jQuery
 </script>
