@@ -395,9 +395,6 @@
                             <h4>Meet your new Best Friend</h4>
                             <div class="card-body">
                                 <ul id="friendsList" class="list-group">
-                                    <li><p>Name: </p>
-                                        <p id='newFriend'></p></li>
-                                    <li id='img'></li>
                                 </ul>
                             </div>
                         </div>
@@ -436,22 +433,55 @@
             ]
         };
 
-        $.post('/api/friends', newFriend, function (data) {
-            console.log(data);
-            if (data) {
-                // need friend name and photo
-                $('#newFriend').text(data.name);
-                $('#img').attr(`<img src= ${data.url} alt = "profile picture">`)
+        function sendData(){
 
-            }
-            $('#first_name').val('');
-            $('#last_name').val('');
+            $.post("/api/friends", newFriend,
+            function(data) {
+                
+                // If a table is available... tell user they are booked.
+                if (data) {
+                    console.log('Data has been saved');
+                }
+                
+                // If a table is available... tell user they on the waiting list.
+                else {
+                    console.log('Something has gone wrong');
+                }
+                
+                // Clear the form when submitting
+                $("#first_name").val("");
+                $("#last_name").val("");
+                
+            });
+        };
+        function findFriend(){
+
+            $.ajax({ url: "/api/friends", method: "GET" })
+            .then(function(friendsData) {
+                console.log(friendsData.friendsData);
+                console.log("------------------------------------");
+                // Get a reference to the waitList element and populate it with tables
+                var bestFriendList = $("#friendsList");
+                
+                // Then display the fields in the HTML (Section Name, Date, URL)
+                var listItem = $("<li class='list-group-item mt-4'>");
+
+                    listItem.append(
+                        $("<h2>").text("Name: " + friendsData.friendsData.name),
+                            $("<hr>"),
+                        $("<h2>").attr(`<img src = ${friendsData.friendsData.url} alt = "Profile Pic" height = '42' width = '42'>`),
+          );
+          
+          bestFriendList.append(listItem);
         });
-
-
+        
         $(document).ready(function () {
             $('.modal').modal();
-        });
+        })
+    };
+    sendData();
+    findFriend();
     });
+
     // Or with jQuery
 </script>
